@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgb(0, 0, 0);
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.anim{
+  display: flex;
+  display: none;
+  justify-content: center;
+}
+
+.text-center{
+  margin-top: 10px;
+  text-align: center;
+}
+
+ul,li{
+  text-decoration: none;
+}
+
+ul{
+  margin-top: 30px;
+text-align: center;
+}
+
+#agregarTarea{
+  margin-top: 20px;
+}
+
+.tareaInput{
+  color: #1e9bff;
+  margin: 5px;
+  background: none;
+  border: none;
+}
+
+.tareaInput::placeholder{
+  text-align: center;
+}
+
+.eliminar {
+  display: none;
+}
+
+
+a{
+  position: relative;
+  left: 40%;
+  top: 20px;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+a:hover{
+  background: var(--clr);
+  color: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 15px var(--clr);
+}
+
+a:before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+
+a span{
+  position: relative;
+  z-index: 1;
+}
+
+a i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+a i::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a:hover i::before{
+  width: 20px;
+  left: 20%;
+}
+
+
+a i::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a:hover i::after{
+  width: 20px;
+  left: 80%;
+}
